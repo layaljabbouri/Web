@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /private/
+Disallow: /admin/
+
+
+vvwz_kpk_aopz_vul_nla_fvb
