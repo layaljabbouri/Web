@@ -43,7 +43,7 @@ function login(req,res){
         }
         else if(row.username=='admin312324435')
         {
-            res.send('CS_FLAG{C0NGR4T5_W4S_TH!3_FL4G_E43Y_F0R_Y0U?}');
+            res.send('CSCTF{C0NGR4T5_W4S_TH!3_FL4G_E43Y_F0R_Y0U?}');
         }
         else{
             console.log(row.username);
