@@ -1,0 +1,44 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages</title>
+</head>
+<body>
+  <h1>Messages</h1>
+  <div id="messages"></div>
+  <script>
+    document.cookie = "FLAG=secret";
+    function fetchMessages() {
+    fetch('/get-messages')
+        .then(response => response.text())
+        .then(messages => {
+            const messagesDiv = document.getElementById('messages');
+            messagesDiv.textContent = messages; // Set messages as text content
+        });
+      }
+
+
+
+    fetchMessages();
+    // setInterval(fetchMessages, 30000); // Refresh every 30 seconds
+  </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Messages</title>
+        </head>
+        <body>
+            <h1>Messages</h1>
+            <ul id="messages-list">
+                <!-- ${messages.map(message => `<li>${message}</li>`).join('')} -->
+            </ul>
+        </body>
+        </html>

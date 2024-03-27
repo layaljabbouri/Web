@@ -12,12 +12,18 @@ const path = require('path');
 const homeRoutes = require('./routes/home');
 const adminRoutes = require('./routes/admin');
 
+//Set the template engine (ejs for dynamic html)
+app.set('view engine', 'ejs');
+//the path by default is /views but we ll do it anws
+app.set('views', 'views')
 
-//for static css
+
+//for static files
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(bodyParser.urlencoded({extended: true})); //for submitted data
 
+//routes
 app.use(homeRoutes);
 app.use(adminRoutes);
 

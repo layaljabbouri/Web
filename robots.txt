@@ -3,4 +3,4 @@ Disallow: /private/
 Disallow: /admin/
 
 
-JZJAM{vvwz_kpk_aopz_vul_nla_fvb}
+JZJAM{vVwz_kpk_aOpz_vUl_Nla_fVb?}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CentraleSupelec</title>
+
+   <link rel="stylesheet" href="/css/main.css">
+   
+</head>
+<body>
+    <!-- <script>document.cookie="test"</script> -->
+    <section id="header">
+        <a><img src="/img/logo.png" class="logo" height="50px" width="50px" alt=""></a>
+    
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="/">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li>
+                <form action="search" id="search-form" method="post">
+                    <input type="text" id="searchInput" name="searchInput" placeholder="Search by username...">
+                    <button type="submit" id="search-button">Search</button>
+                    <ul id="searchResults"></ul>
+                </form>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="campus">
+      
+        <h4>Welcome to the non-official CentraleSupelec website!</h4>
+        <h2>Discover our esteemed faculty and staff members</h2>
+        <!-- <h1>Contact them via email</h1> -->
+        <a href="login">If you are a member, click here to sign in</a>
+    
+    </section>
+    
+    
+    
+    <section id="members" class="section-p1">
+        <h2>Featured Members</h2>
+        <div class="pro-container">
+            <% members.forEach(member => { %>
+                <div class="pro">
+                    <img src="/img/member.png" alt="">
+                    <div class="des">
+                        <span>Professor</span>
+                        <h5><%= member.first_name %> <%= member.last_name %></h5>
+                        <span><%= member.username %></span>
+                        <h4><a href="mailto:<%= member.email %>"><%= member.email %></a></h4>
+                    </div>
+                </div>
+            <% }); %>
+
+        </div>
+    </section>
+</body>
+
+
+</html>

@@ -1,0 +1,9 @@
+FLAG
+
+<scrip>alert("test")</script>: asasa
+<script>alert("test")</script>: asasa
+<script>alert("test")</script>: asasa
+
+
+creer page pour les messages -> refresh each 30s -> un agent (navigateur, fait f5)
+creer cookie pour l agent contennat un FLAG
