@@ -26,6 +26,14 @@ router.get('/contact', (req, res) => {
     res.sendFile(path.join(__dirname, '../', 'views', 'contact.html'));
 });
 
+router.get('/about', (req, res) => {
+    res.sendFile(path.join(__dirname, '../', 'views', 'about.html'));
+});
+
+router.get('/admin', (req, res) => {
+    res.send('<h1 style="text-align: center; color: red;">Access Denied</h1><p style="text-align: center;">You do not have permission to view this page.</p>');
+});
+
 router.post('/login', (req, res) => {
     console.log(req.body); //json req//req body exists bc i used body parser
     console.log(req.body.username); //cs bl form aande username
